@@ -7,9 +7,32 @@ import { AppComponent } from './app.component'
 
 const routes = [
   {
+    path: 'sign-in-page',
+    loadChildren: () =>
+      import('./pages/sign-in-page/sign-in-page.module').then(
+        (m) => m.SignInPageModule
+      ),
+  },
+  {
+    path: 'chat-page',
+    loadChildren: () =>
+      import('./pages/chat-page/chat-page.module').then(
+        (m) => m.ChatPageModule
+      ),
+  },
+  {
     path: '',
     loadChildren: () =>
-      import('./pages/home/home.module').then((m) => m.HomeModule),
+      import('./pages/landing-page/landing-page.module').then(
+        (m) => m.LandingPageModule
+      ),
+  },
+  {
+    path: 'sign-up-page',
+    loadChildren: () =>
+      import('./pages/sign-up-page/sign-up-page.module').then(
+        (m) => m.SignUpPageModule
+      ),
   },
 ]
 
