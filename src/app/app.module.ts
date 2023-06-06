@@ -14,10 +14,10 @@ const routes = [
       ),
   },
   {
-    path: 'chat-page',
+    path: 'dialogue1',
     loadChildren: () =>
-      import('./pages/chat-page/chat-page.module').then(
-        (m) => m.ChatPageModule
+      import('./pages/dialogue1/dialogue1.module').then(
+        (m) => m.Dialogue1Module
       ),
   },
   {
