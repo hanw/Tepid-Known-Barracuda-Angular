@@ -10,5 +10,11 @@ export class Dialogue {
   text: string = '示例问题：'
   @Input()
   button: string = 'Button'
+  @Input()
+  SimplifiedChinese: string = '简体中文'
+  @Input()
+  Language: string = '语言'
+  @Input()
+  English: string = 'English'
   constructor() {}
 }
