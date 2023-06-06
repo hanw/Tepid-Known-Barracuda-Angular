@@ -3,12 +3,13 @@ import { RouterModule } from '@angular/router'
 import { CommonModule } from '@angular/common'
 
 import { NavigationLinks } from './navigation-links/navigation-links.component'
-import { AppComponent } from './component/component.component'
+import { PDFPanel } from './pd-panel/pd-panel.component'
+import { ChatPanel } from './chat-panel/chat-panel.component'
 
 @NgModule({
-  declarations: [NavigationLinks, AppComponent],
+  declarations: [NavigationLinks, PDFPanel, ChatPanel],
   imports: [CommonModule, RouterModule],
-  exports: [NavigationLinks, AppComponent],
+  exports: [NavigationLinks, PDFPanel, ChatPanel],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class ComponentsModule {}
